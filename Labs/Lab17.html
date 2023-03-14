@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML 5 new Form Elements </title>
+    <style type="text/css">
+        body {
+            background-color: milkwhite;
+        }
+
+        .mytable {
+            text-align: left;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        input {
+            color: red;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px 5px;
+            margin: 8px 0;
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <table class="mytable">
+            <caption>
+                <h2> HTML 5 new Form Elements </h2>
+            </caption>
+            <tr>
+                <td> <label for="website"> Web Site </label></td>
+                <td> <input type="url" id="website" name="website" required /></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit Now" formaction="hello.jsp" formenctype="text/plain"
+                        formmethod="GET" formtarget="_blank" formnovalidate />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

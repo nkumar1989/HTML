@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to CC!</title>
+    <style>
+        #hmenu {
+            border: 1px blue solid;
+            color: red;
+            font-size: 20px;
+            width: 900px;
+            height: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            padding-top: 15px;
+            padding-left: 25px;
+        }
+
+        span {
+            padding: 10px;
+        }
+
+        .bodyContent {
+            border: 1px red solid;
+            width: 900px;
+            height: 450px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 10px;
+        }
+
+        #myframe {
+            width: 900px;
+            height: 450px;
+            border: 1px red solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hmenu">
+        <span> <a href="mycourses/nodejs.html" target="myframe"> NodeJS Training </a> </span>
+        <span> <a href="mycourses/angular.html" target="myframe"> Angular Training
+            </a></span>
+        <span> <a href="mycourses/mongodb.html" target="myframe"> MongoDB Training </a>
+        </span>
+        <span> <a href="https://www.coursecube.com" target="myframe">Open CourseCube </a>
+        </span>
+        <span> <a href="https://www.facebook.com" target="myframe">Open Facebook </a>
+        </span>
+    </div>
+    <div class="bodyContent">
+        <iframe id="myframe" name="myframe" src="mycourses/welcome.html">
+        </iframe>
+    </div>
+</body>
+
+</html>

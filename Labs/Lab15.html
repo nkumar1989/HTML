@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML 5 new Form Elements </title>
+    <style type="text/css">
+        body {
+            background-color: milkwhite;
+        }
+
+        .mytable {
+            text-align: left;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        input {
+            color: red;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px 5px;
+            margin: 8px 0;
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center" style="background-color: lightgray;">
+        <form action="hello.jsp" autocomplete="on">
+            <table class="mytable">
+                <caption>
+                    <h2> HTML 5 new Form Elements </h2>
+                </caption>
+                <tr>
+                    <td> <label for="dob"> Date of Birth </label></td>
+                    <td> <input type="date" id="dob" name="dob" min="1980-12-31" max="2020-12-31" required /></td>
+                </tr>
+                <tr>
+                    <td> <label for="tob"> Time of Birth </label></td>
+                    <td> <input type="time" id="tob" name="tob" min="09:00" max="11:00" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="date-time"> Date and Time </label></td>
+                    <td> <input type="datetime-local" id="date-time" name="date-time" required /></td>
+                </tr>
+                <tr>
+                    <td> <label for="myweek"> Week of month </label></td>
+                    <td> <input type="week" id="myweek" name="myweek" required /></td>
+                </tr>
+                <td> <label for="mymonth"> Month of Year </label></td>
+                <td> <input type="month" id="mymonth" name="mymonth"  required /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit Now" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

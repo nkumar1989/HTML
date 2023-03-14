@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML 5 new Form Elements </title>
+    <style type="text/css">
+        body {
+            background-color: milkwhite;
+        }
+
+        .regFormTable {
+            text-align: left;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        input {
+            color: red;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px 5px;
+            margin: 8px 0;
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center" style="background-color: lightgray;">
+        <form action="hello.jsp" method="GET" enctype="text/plain" autocomplete="off">
+            <table class="regFormTable">
+                <caption>
+                    <h2> HTML 5 new Form Elements </h2>
+                </caption>
+                <tr>
+                    <td><label for="sid"> SID</label></td>
+                    <td> <input type="text" id="sid" name="sid" value="B26-101" placeholder="SID" readonly /></td>
+                </tr>
+                <tr>
+                    <td><label for="fname"> Full Name </label></td>
+                    <td> <input type="text" id="fname" name="fname" placeholder="Full Name" maxlength="10" required
+                            autofocus /></td>
+                </tr>
+                <tr>
+                    <td> <label for="email"> Email ID </label></td>
+                    <td> <input type="email" id="email" name="email" placeholder="Email ID" maxlength="20" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="phone"> Phone No </label></td>
+                    <td> <input type="tel" id="phone" name="phone" placeholder="Phone No" pattern="[0-9]{5}" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="jlc-courses"> Courses</label></td>
+                    <td>
+                        <input list="mycourses" id="jlc-courses" name="courses" required>
+                        <datalist id="mycourses">
+                            <option value="Java"> Java </option>
+                            <option value="Python"> Python</option>
+                            <option value="Angular">Angular </option>
+                            <option value="MongoDB"> MongoDB</option>
+                            <option value="JDBC">JDBC </option>
+                            <option value="Pyramid"> Pyramid</option>
+                            <option value="JSP">JSP </option>
+                            <option value="MySQL"> MySQL</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit Now" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

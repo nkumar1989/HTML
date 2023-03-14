@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML 5 new Form Elements </title>
+    <style type="text/css">
+        body {
+            background-color: milkwhite;
+        }
+
+        .mytable {
+            text-align: left;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        input {
+            color: red;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px 5px;
+            margin: 8px 0;
+            border: 1px solid blue;
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center" style="background-color: lightgray;">
+        <form id="regForm" action="hello.jsp" enctype="text/plain" method="GET" autocomplete="on" target="_blank"
+            novalidate>
+            <table class="mytable">
+                <caption>
+                    <h2> HTML 5 new Form Elements </h2>
+                </caption>
+                <tr>
+                    <td> <label for="website"> Web Site </label></td>
+                    <td> <input type="url" id="website" name="website" required /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit Now" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <table class="mytable">
+            <tr>
+                <td> <label for="fullname"> Full name </label></td>
+                <td> <input type="text" id="fullname" name="fullname" form="regForm" required /></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML 5 new Form Elements </title>
+    <style type="text/css">
+        body {
+            background-color: milkwhite;
+        }
+
+        .mytable {
+            text-align: left;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        input {
+            color: red;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px 5px;
+            margin: 8px 0;
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center" style="background-color: lightgray;">
+        <form action="hello.jsp" novalidate>
+            <table class="mytable">
+                <caption>
+                    <h2> HTML 5 new Form Elements </h2>
+                </caption>
+                <tr>
+                    <td> <label for="fname"> Full Name </label></td>
+                    <td> <input type="text" id="fname" name="myfname" value="Srinias" disabled /></td>
+                </tr>
+                
+                <tr>
+                    <td> <label for="email"> Email ID</label></td>
+                    <td> <input type="search" id="email" name="myemail" required /></td>
+                </tr>
+                <tr>
+                    <td> <label for="age"> Age</label></td>
+                    <td> <input type="number" id="age" name="myage1" step="1" min="21" max="40" required /></td>
+                </tr>
+                <tr>
+                    <td> <label for="age"> Age</label></td>
+                    <td> <input type="range" id="age" name="myage2" min="25" max="35" required /></td>
+                </tr>
+                <tr>
+                    <td> <label for="mycolor"> Choose color</label></td>
+                    <td> <input type="color" id="mycolor" name="mycolor" required /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit Now" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

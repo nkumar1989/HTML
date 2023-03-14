@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CourseCube Registration Form</title>
+    <style type="text/css">
+
+        body {
+          background-color: milkwhite;
+        }
+        .myRegTable{
+            text-align: left;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight:bold;
+        }
+        input,select,textarea {
+            color:red;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight:bold;
+            padding: 5px 5px;
+            margin: 8px 0;
+            border: 1px solid blue;
+            border-radius:5px;
+        }
+        input[type=submit] ,input[type=reset],button{
+            color:green;
+            font-family: verdana;
+            font-size: 20px;
+            font-weight:bold;
+            padding: 10px 10px;
+            margin: 22px 0;
+        }
+        input[type=radio],input[type=checkbox] {
+            color:red;
+            border: 5px red solid;
+            width: 1.5em;
+            height: 1.5em;
+        }
+        div{
+        background-color:beige;
+        width:75%;
+        margin-left:150px;
+    }
+       
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="register.jlc" method="POST" enctype="multipart/form-data">
+            <table class="myRegTable">
+                <caption>
+                    <h2> Registration Form</h2>
+                </caption>
+                <tr>
+                    <td> <label for="mysid"> Student ID </label></td>
+                    <td> <input type="text" name="sid" id="mysid" value="B99-101" size="20" readonly> </td>
+                </tr>
+                <tr>
+                    <td><label for="fname"> Full Name </label></td>
+                    <td> <input type="text" id="fname" name="fname" /></td>
+                </tr>
+                <tr>
+                    <td> <label for="email"> Email ID </label></td>
+                    <td> <input type="text" id="email" name="email" /></td>
+                </tr>
+                <tr>
+                    <td> <label for="pword"> Password </label></td>
+                    <td> <input type="password" id="pword" name="pword" /></td>
+                </tr>
+                <tr>
+                    <td> <label for="courses"> Courses</label></td>
+                    <td>
+                        <input type="radio" id="courses" name="courses" vaue="Java" /> Java <br />
+                        <input type="radio" id="courses" name="courses" vaue="Python" /> Python
+                        <br />
+                        <input type="radio" id="courses" name="courses" vaue="Angular" /> Angular
+                        <br />
+                        <input type="radio" id="courses" name="courses" vaue="MongoDB" />
+                        MongoDB <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="courses"> Courses</label></td>
+                    <td>
+                        <input type="checkbox" id="courses" name="courses" vaue="Java" /> Java
+                        <br />
+                        <input type="checkbox" id="courses" name="courses" vaue="Python" /> Python
+                        <br />
+                        <input type="checkbox" id="courses" name="courses" vaue="Angular" />
+                        Angular <br />
+                        <input type="checkbox" id="courses" name="courses" vaue="MongoDB" />
+                        MongoDB <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="courses"> Courses</label></td>
+                    <td>
+                        <select id="courses" name="courses">
+                            <option value="">---------------------select----------------- </option>
+                            <option value="Java">Java </option>
+                            <option value="Python"> Python</option>
+                            <option value="Angular">Angular </option>
+                            <option value="MongoDB"> MongoDB</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="photo"> Upload Photo</label></td>
+                    <td> <input type="file" id="photo" name="photo" /></td>
+                </tr>
+                <tr>
+                    <td> <label for="myremarks"> Remarks </label></td>
+                    <td>
+                        <textarea name="remarks" id="myremarks" cols="30" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="I am button 1" />
+                        <button> I am button 2</button>
+                        <input type="submit" id="x" value="Register Now" />
+                        <input type="reset" id="y" value="Clear Form" />
+                        <input type="hidden" name="mytoken" value="D1X5w9" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
